@@ -1,0 +1,243 @@
+*
+  margin: 0
+  padding: 0
+  font-family: Raleway
+  color: #fff
+
+body
+  background: #f4f5f8
+  min-height: 100vh
+
+header
+  background: rgba(67, 67, 67, 1)
+  height: 70px
+  padding: 0 20px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  box-shadow: 0 4px 4px 0
+
+  .switcher
+    position: absolute
+    visibility: hidden
+    left: -9999
+
+  label
+    font-size: 30px
+    cursor: pointer
+    display: none
+  ul
+    list-style-type: none
+    display: flex
+  a
+    display: block
+    text-transform: uppercase
+    text-decoration: none
+    padding: 0 15px
+    transition: .4s
+    &:hover
+      color: #3498db
+.about-section
+    padding: 50px
+    text-align: center
+    h1
+      font-size: 32px
+      color: rgba(67, 67, 67, 1)
+      font-weight: 1000
+      text-align: center
+      letter-spacing: 0.04em
+    h4
+      color: rgba(67, 67, 67, 1)
+    p
+      color: rgba(67, 67, 67, 1)
+      margin: 1.8% auto
+      font-size: 20px
+.button_profile
+  display: inline-block
+  width: 120px
+  height: 40px
+  background: rgb(224, 224, 224)
+  color: rgb(67, 67, 67)
+  font-size: 15px
+  border-radius: 10px
+  outline: none
+  border: none
+  letter-spacing: 1px
+  transition: transform 80ms ease-in
+  margin: 1.3% auto
+  //margin-left: 14px
+  font-weight: 600
+
+
+main
+  -ms-flex: 70%
+  flex: 70%
+  background-color: white
+  padding: 3% 3% 3% 3%
+  .main_bloc
+    background-color: rgb(170, 170, 170)
+    width: 60%
+    padding:  5px 1px 20px 20px
+    border: 1px solid rgb(107, 107, 107)
+    margin: 0.3% auto
+  .main_title
+    margin: 1% auto
+    font-size: 23px
+    font-weight: 500
+    letter-spacing: 0.02em
+  .main_text
+    margin: 0.2% auto
+  .create_car
+    color: #000000
+    float: right
+    font-size: 23px
+    padding: 0% 4.6% 0% 0%
+  .hr
+    margin: 0
+  .main_update
+    display: inline
+    color: #000000
+
+  #zatemnenie
+        background: rgba(167, 155, 155, 0.5)
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        display: none
+
+  #okno
+        width: 300px
+        height: 243px
+        text-align: center
+        padding: 15px
+        border: 3px solid Black
+        border-radius: 10px
+        color: deeppink
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        margin: auto
+        background: LemonChiffon
+  #zatemnenie:target
+        display: block
+  .close
+        display: inline-block
+        border: 1px solid Black
+        color: Black
+        padding: 0 12px
+        margin: 10px
+        text-decoration: none
+        background: #f2f2f2
+        font-size: 14pt
+  .close:hover
+        background: #e6e6ff
+  h2
+    font-size: 23px
+    color: rgb(0, 0, 0)
+    text-align: center
+    letter-spacing: 0.04em
+    padding: 4% 0% 0% 0%
+  .input
+    color: rgb(255, 255, 255)
+    font-size: 15px
+    font-style: normal
+    font-variant: normal
+    font-weight: 400
+    line-height: 20px
+  .input[class="input"]
+    width: 200px
+    height: 20px
+    margin-top: 4%
+    padding: 13px
+    font-size: 14px
+    color: rgb(255, 255, 255)
+    background-color: Black
+    outline: none
+    border: none
+    border-radius: 7px
+  .input[id="txt-input"]
+    width: 200px
+    color: #ffffff
+  .input:focus
+    transform: translateX(-2px)
+    border-radius: 7px
+  .button_profile
+    display: inline-block
+    width: 120px
+    height: 40px
+    background: rgb(224, 224, 224)
+    color: rgb(255, 255, 255)
+    font-size: 15px
+    border-radius: 10px
+    outline: none
+    border: none
+    letter-spacing: 1px
+    transition: transform 80ms ease-in
+    margin: 7% auto
+    font-weight: 600
+  .button_main
+    display: inline-block
+    width: 120px
+    height: 40px
+    padding: 0 20px
+    background: Black
+    border-radius: 7px
+    outline: none
+    border: none
+    margin: 4.5% auto
+    letter-spacing: 0.5px
+
+
+
+.footer
+  background: rgba(67, 67, 67, 1)
+  bottom: 0
+  width: 100%
+  height: 100px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  ul
+    list-style-type: none
+    display: flex
+    padding: 0 35px
+    justify-content: start
+  p
+    padding: 0 35px
+    margin: 15px
+  .nav-item
+    padding: 0.2em 1em
+
+@media screen and (max-width: 800px)
+  .open,
+  .close
+    display: block
+
+  .close
+    position: absolute
+    top: 40px
+    right: 40px
+
+  .switcher:checked ~ nav
+    right: 0
+  nav
+    position: fixed
+    width: 100%
+    height: 100vh
+    background: rgba(67, 67, 67, 1)
+    right: -100%
+    top: 0
+    text-align: center
+    padding: 100px 0
+    transition: .7s
+
+    ul
+      flex-direction: column
+    a
+      padding: 20px
+      &:hover
+        background-color: rgba(67, 67, 67, 1)

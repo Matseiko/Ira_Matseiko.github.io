@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Navigation Menu</title>
+  <link rel="stylesheet" href ="css/All.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+
+  <header>
+    <h2>NATS</h2>
+
+    <input class="switcher" type="checkbox" id="menu">
+    <label class="open" for="menu">
+      <i class="fa fa-bars"></i>
+    </label>
+    <nav>
+      <ul>
+        <li><a href="About_us.html">About us</a></li>
+        <li><a href="Cars.html">Cars</a></li>
+        <li><a href="Users.html">Users</a></li>
+        <li><a href="Profile.html">Profile</a></li>
+      </ul>
+      <label class="close" for="menu">
+        <i class="fa fa-times"></i>
+      </label>
+    </nav>
+
+  </header>
+  <section class="container_page">
+        <div class="about-section">
+            <h1>Profile</h1>
+            <h4>Information about you</h4>
+            <p class="new_p">First name : first name</p>
+            <p class="new_p">Last name : last name</p>
+            <p class="new_p">Email : email@gmail.com</p>
+            <p class="new_p">Birthday : 23.03.2000</p>
+            <p class="new_p">Role : role</p>
+            <div class="button_profile_">
+                <button type="button"  onclick="location.href='Sign_in.html'" class="button_profile">Sign out </button>
+                <button type="button" onclick="location.href='Sign_up.html'" class="button_profile">Delete</button>
+            </div>
+        </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <p><i class="fa fa-phone"></i>+380961234567</p>
+                <ul class="nav">
+                    <li class="nav-item"><a href="" class="nav-link pl-0"><i class="fa fa-facebook fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="https://www.instagram.com/iramatseiko/" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a></li>
+                </ul>
+                <br>
+            </div>
+        </div>
+    </div>
+  </footer>
+</body>
+</html>

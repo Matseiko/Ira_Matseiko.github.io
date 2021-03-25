@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  font-family: Raleway;
+}
+
+body {
+  background-image: url("/images/car.jpg");
+  background-size: cover;
+  font-size: 18px;
+}
+
+form {
+  width: 300px;
+  height: 340px;
+  border-radius: 23px;
+  padding: 2%;
+  background: #000000;
+  margin: 150px;
+  margin-left: 230px;
+}
+
+header h2 {
+  font-size: 29px;
+  color: #e0e0e0;
+  font-weight: 1000;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+header h4 {
+  color: #e0e0e0;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  margin: 1% auto;
+}
+
+h3 {
+  font-size: 16px;
+  color: #434343;
+  font-weight: 600;
+  text-align: center;
+}
+
+input {
+  color: #434343;
+  font-size: 15px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+button {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  padding: 0 20px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin: 7% auto;
+}
+
+.button_profile_main {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  background: #e0e0e0;
+  color: #434343;
+  font-size: 15px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  letter-spacing: 1px;
+  transition: transform 80ms ease-in;
+  margin: 7% auto;
+  font-weight: 600;
+}
+
+a {
+  color: #434343;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+input[class=input] {
+  width: 240px;
+  height: 40px;
+  margin-top: 2%;
+  padding: 15px;
+  font-size: 16px;
+  color: #434343;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+input[id=txt-input] {
+  width: 240px;
+  color: #000000;
+}
+
+input:focus {
+  transform: translateX(-2px);
+  border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+  body {
+    background-color: deeppink;
+    font-size: 18px;
+  }
+
+  form {
+    width: 300px;
+    height: 340px;
+    border-radius: 23px;
+    padding: 3%;
+    background-color: #4e4f6b;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #6b6b6b;
+  }
+}
